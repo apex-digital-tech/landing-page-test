@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroStride X1 - Elevate Your Run</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icônes Lucide -->
+    <script src="https://unpkg.com"></script>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i data-lucide="zap"></i> AERO<span>STRIDE</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#shop">Pre-Order</a></li>
+            </ul>
+            <a href="#shop" class="btn btn-primary">Pre-Order Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge">
+                    <i data-lucide="award" size="14"></i> #1 Rated Running Shoe of 2026
+                </div>
+                <h1>Defy Gravity. <br>Speed Redefined.</h1>
+                <p>Meet the AeroStride X1. Engineered with responsive NitroFoam™ technology and engineered mesh to push your limits and crush your personal bests.</p>
+                <div class="hero-actions">
+                    <a href="#shop" class="btn btn-primary">Buy Now — $149</a>
+                    <a href="#features" class="btn btn-outline">Watch Technology</a>
+                </div>
+            </div>
+            
+            <!-- Bloc Image et Sélecteur de Couleur -->
+            <div class="hero-image-wrapper">
+                <div class="circle-bg"></div>
+                
+                <!-- Image Blanche par défaut (WOLO2.png) -->
+                <img src="WOLO2.png" alt="AeroStride X1 Sports Shoe" class="shoe-img" id="heroShoe">
+                               
+                <!-- Boutons de couleurs (La puce blanche a la classe "active" par défaut) -->
+                <div class="color-picker">
+                    <span class="color-dot active" data-color="white" style="background-color: #ffffff; border: 1px solid #ccc;"></span>
+                    <span class="color-dot" data-color="black" style="background-color: #111111;"></span>
+                    <span class="color-dot" data-color="blue" style="background-color: #335bff;"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Engineered For Peak Performance</h2>
+                <p>Every element is structurally optimized to offer maximum comfort and speed.</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="icon-wrapper"><i data-lucide="wind"></i></div>
+                    <h3>NitroFoam™ Midsole</h3>
+                    <p>Provides 85% energy return with ultra-lightweight cushioning to guard your joints.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-wrapper"><i data-lucide="activity"></i></div>
+                    <h3>Breathable Matrix Mesh</h3>
+                    <p>Keeps your feet completely cool and dry, preventing blisters during long marathon runs.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-wrapper"><i data-lucide="shield-check"></i></div>
+                    <h3>High-Grip Carbon Sole</h3>
+                    <p>Maximum multi-surface traction ensuring zero slips, even during wet, rainy outdoor sprints.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section class="cta" id="shop">
+        <div class="container cta-content">
+            <h2>Get 15% Off Your First Order</h2>
+            <p>Join the AeroStride club today. Drop your email to unlock exclusive early access, colorway drops, and a 15% discount code.</p>
+            
+            <form id="discountForm">
+                <div class="form-group">
+                    <input type="email" id="emailInput" placeholder="Enter your best email address" required>
+                    <button type="submit" class="btn btn-primary">Get Discount <i data-lucide="arrow-right" size="16"></i></button>
+                </div>
+            </form>
+            <div id="formMessage" class="message"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AEROSTRIDE Inc. Engineered for athletes globally.</p>
+        </div>
+    </footer>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
